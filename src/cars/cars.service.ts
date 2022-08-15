@@ -15,11 +15,20 @@ export class CarsService {
             model: 'Civic'
         },
         {
-            id: 1, 
+            id: 3, 
             brand: 'Jeep',
             model: 'Cherokee'
         },
     ];
+
+    findAll() {
+        return this.cars;
+    }
+
+    findOneById( id: number ) {
+        const car = this.cars.find(car => car.id == id);
+        return car;
+    }
 
 
 }
