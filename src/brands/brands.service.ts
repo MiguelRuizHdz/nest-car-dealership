@@ -10,11 +10,11 @@ import { Brand } from './entities/brand.entity';
 export class BrandsService {
 
   private brands: Brand[] = [
-    {
-      id: uuid(),
-      name: 'Toyota',
-      createdAt: new Date().getTime()
-    }
+    // {
+    //   id: uuid(),
+    //   name: 'Toyota',
+    //   createdAt: new Date().getTime()
+    // }
   ]
 
   create(createBrandDto: CreateBrandDto) {
